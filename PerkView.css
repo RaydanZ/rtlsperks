@@ -1,0 +1,93 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Changed font */
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #000000, #DAB060);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between title and search bar */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    color: #fff; /* Changed color for better visibility */
+}
+
+input[type="text"], select {
+    width: auto; /* Change width to auto for better control */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increase font size for better readability */
+    background-color: #fff; /* Set a white background for contrast */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+select {
+    width: 200px; /* Set a fixed width for the dropdown */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+select:hover {
+    border-color: #ff7e5f; /* Change border color on hover */
+}
+
+.filters {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters > div {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.filters label {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center align items vertically */
+    margin-right: 15px; /* Space between labels */
+    font-size: 18px; /* Increased font size for better readability */
+    color: #333; /* Darker color for better contrast */
+}
+
+.filters input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label text */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap to the next line */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
