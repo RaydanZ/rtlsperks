@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to right, #ffffff, #DAB060);
+    background: linear-gradient(to right, #9b9b9b, #DAB060);
 }
 
 .container {
