@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronin Perk Gallery</title>
+    <link rel="stylesheet" href="PerkView.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> <!-- Added Google Font -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RONIN PERKS</h1>
+            <input type="text" id="searchBar" placeholder="Search for perks..." onkeyup="filterImages()">
+        </div>
+        
+        <div class="filters">
+            <label for="tierSelect">Tier:</label>
+            <select id="tierSelect" onchange="filterImages()">
+                <option value="">All Tiers</option>
+                <option value="1">Tier 1</option>
+                <option value="2">Tier 2</option>
+                <option value="3">Tier 3</option>
+            </select>
+
+            <div class="checkbox-group">
+                <strong>Class:</strong>
+                <br>
+                <label><input type="checkbox" value="ATK" onchange="filterImages()"> ATK</label>
+                <label><input type="checkbox" value="ATK_SPEED" onchange="filterImages()"> ATK Speed</label>
+                <label><input type="checkbox" value="CRIT_RATE" onchange="filterImages()"> Crit Rate</label>
+                <label><input type="checkbox" value="CRIT_DMG" onchange="filterImages()"> Crit Dmg</label>
+                <label><input type="checkbox" value="LIONHEART" onchange="filterImages()"> Lionheart</label>
+                <label><input type="checkbox" value="HP" onchange="filterImages()"> HP</label>
+                <label><input type="checkbox" value="POSTURE" onchange="filterImages()"> Posture</label>
+                <label><input type="checkbox" value="DODGE" onchange="filterImages()"> Dodge</label>
+                <label><input type="checkbox" value="HEAVY_ATTACK" onchange="filterImages()"> Heavy Attack</label>
+                <label><input type="checkbox" value="COUNTER_FLASH" onchange="filterImages()"> Counterflash</label>
+                <label><input type="checkbox" value="LEVEL" onchange="filterImages()"> Level</label>
+                <label><input type="checkbox" value="SKILL" onchange="filterImages()"> Skill</label>
+                <label><input type="checkbox" value="POSTURE_DMG" onchange="filterImages()"> Posture Dmg</label>
+                <label><input type="checkbox" value="SURVIVE" onchange="filterImages()"> Survive</label>
+                <label><input type="checkbox" value="UNIQUENESS" onchange="filterImages()"> Uniqueness</label>
+            </div>
+        </div>
+
+        <div class="grid" id="imageGrid">
+            <!-- Images will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="PerkView.js"></script>
+</body>
+</html>
