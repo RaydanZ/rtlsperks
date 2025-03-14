@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif; /* Changed font */
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
     background: linear-gradient(to right, #000000, #DAB060);
@@ -11,44 +11,44 @@ body {
 }
 
 .header {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between title and search bar */
-    margin-bottom: 20px; /* Space below the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 h1 {
-    margin: 0; /* Remove default margin */
-    color: #DAB060; /* Changed color for better visibility */
+    margin: 0;
+    color: #DAB060;
 }
 
 input[type="text"], select {
-    width: auto; /* Change width to auto for better control */
+    width: auto;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #000000;
     border-radius: 4px;
-    font-size: 16px; /* Increase font size for better readability */
-    background-color: #d6d6d6; /* Set a white background for contrast */
-    transition: border-color 0.3s; /* Smooth transition for border color */
+    font-size: 16px;
+    background-color: #d6d6d6;
+    transition: border-color 0.3s;
 }
 
 select {
-    width: 200px; /* Set a fixed width for the dropdown */
-    cursor: pointer; /* Change cursor to pointer for better UX */
+    width: 200px;
+    cursor: pointer;
 }
 
 select:hover {
-    border-color: #DAB060; /* Change border color on hover */
+    border-color: #DAB060;
 }
 
 .filters {
-    margin-bottom: 30px; /* Increased margin */
-    padding: 20px; /* Increased padding */
-    background: linear-gradient(to right, #1b1b1b, #1b1b1b); /* Dark gradient */
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #1b1b1b, #1b1b1b);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
-    color: #fff; /* Change text color to white for better contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
 
 }
 
@@ -61,20 +61,20 @@ select:hover {
 }
 
 .filters label {
-    display: flex; /* Use flexbox for better alignment */
-    align-items: center; /* Center align items vertically */
-    margin-right: 15px; /* Space between labels */
-    font-size: 18px; /* Increased font size for better readability */
-    color: #ffffff; /* Darker color for better contrast */
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .filters input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and label text */
+    margin-right: 10px;
 }
 
 .checkbox-group {
     display: flex;
-    flex-wrap: wrap; /* Allow checkboxes to wrap to the next line */
+    flex-wrap: wrap;
 }
 
 .grid {
@@ -95,20 +95,20 @@ select:hover {
 }
 
 .footer {
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Space above the footer */
-    padding: 10px; /* Padding inside the footer */
-    background-color: #000000cc; /* Dark background */
-    color: #fff; /* White text color */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 -2px 5px #00000080; /* Optional shadow for depth */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000cc;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 -2px 5px #00000080;/
 }
 
 .footer a {
-    color: #DAB060; /* Match the link color to your theme */
-    text-decoration: underline; /* Underline the link */
+    color: #DAB060;
+    text-decoration: underline;
 }
 
 .footer a:hover {
-    color: #ff7e5f; /* Change color on hover for better interaction */
+    color: #ff7e5f;
 }
