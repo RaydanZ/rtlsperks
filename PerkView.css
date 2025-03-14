@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif; /* Changed font */
+    font-family: 'Montserrat', sans-serif; 
     margin: 0;
     padding: 20px;
     background: linear-gradient(to right, #ffffff, #DAB060);
@@ -11,41 +11,41 @@ body {
 }
 
 .header {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between title and search bar */
-    margin-bottom: 20px; /* Space below the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
 }
 
 h1 {
-    margin: 0; /* Remove default margin */
-    color: #fff; /* Changed color for better visibility */
+    margin: 0;
+    color: #fff;
 }
 
 input[type="text"], select {
-    width: auto; /* Change width to auto for better control */
+    width: auto;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px; /* Increase font size for better readability */
-    background-color: #fff; /* Set a white background for contrast */
-    transition: border-color 0.3s; /* Smooth transition for border color */
+    font-size: 16px; 
+    background-color: #fff;
+    transition: border-color 0.3s;
 }
 
 select {
-    width: 200px; /* Set a fixed width for the dropdown */
-    cursor: pointer; /* Change cursor to pointer for better UX */
+    width: 200px;
+    cursor: pointer;
 }
 
 select:hover {
-    border-color: #ff7e5f; /* Change border color on hover */
+    border-color: #ff7e5f;
 }
 
 .filters {
     margin-bottom: 20px;
     padding: 15px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Gradient background */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -59,20 +59,20 @@ select:hover {
 }
 
 .filters label {
-    display: flex; /* Use flexbox for better alignment */
-    align-items: center; /* Center align items vertically */
-    margin-right: 15px; /* Space between labels */
-    font-size: 18px; /* Increased font size for better readability */
-    color: #333; /* Darker color for better contrast */
+    display: flex; 
+    align-items: center;
+    margin-right: 15px; 
+    font-size: 18px; 
+    color: #333; 
 }
 
 .filters input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and label text */
+    margin-right: 10px; 
 }
 
 .checkbox-group {
     display: flex;
-    flex-wrap: wrap; /* Allow checkboxes to wrap to the next line */
+    flex-wrap: wrap;
 }
 
 .grid {
