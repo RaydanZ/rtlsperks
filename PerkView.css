@@ -26,10 +26,11 @@ input[type="text"], select {
     width: auto;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #DAB060;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #d6d6d6;
+    background-color: #1b1b1b;
+    color: #fff;
     transition: border-color 0.3s;
 }
 
@@ -47,7 +48,7 @@ select:hover {
     padding: 20px;
     background: linear-gradient(to right, #1b1b1b, #1b1b1b);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #00000080;
     color: #fff;
 
 }
@@ -55,7 +56,7 @@ select:hover {
 .filters > div {
     margin-bottom: 15px;
     padding: 10px;
-    background: #343434;
+    background: #1b1b1b;
     border-radius: 5px;
     border: 1px solid #dab060;
 }
