@@ -107,7 +107,7 @@ select:hover {
 
 .footer a {
     color: #DAB060;
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 .footer a:hover {
