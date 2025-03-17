@@ -2,7 +2,7 @@ const images = [
    
    
     { src: 'Perks/REINCARNATION.jpg', title: 'REINCARNATION', tier: 3, classes: ['ATK'] },
-    { src: 'Perks/INSPIRED.jpg', title: 'INSPIRED', tier: 2, classes: ['ATK'], ['ATK_SPEED'] },
+    { src: 'Perks/INSPIRED.jpg', title: 'INSPIRED', tier: 2, classes: ['ATK', 'ATK_SPEED'] },
     { src: 'Perks/INDOMITABLE_WILL.jpg', title: 'INDOMITABLE WILL', tier: 2, classes: ['ATK'] },
     { src: 'Perks/DEEP_BREATH.jpg', title: 'DEEP BREATH', tier: 3, classes: ['ATK', 'SKILL'] },
     { src: 'Perks/HEAVIEST_SWORD.jpg', title: 'HEAVIEST SWORD', tier: 3, classes: ['HEAVY_ATTACK'] },
