@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronin Perk Gallery</title>
     <link rel="stylesheet" href="PerkView.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> <!-- Added Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -42,10 +42,14 @@
                 <label><input type="checkbox" value="SURVIVE" onchange="filterImages()"> Survive</label>
                 <label><input type="checkbox" value="UNIQUENESS" onchange="filterImages()"> Uniqueness</label>
             </div>
+
+            <label>
+                <input type="checkbox" id="strictFilter" onchange="filterImages()"> Strict Filter
+            </label>
         </div>
 
         <div class="grid" id="imageGrid">
-            <!-- Images will be dynamically added here -->
+            
         </div>
     </div>
     <footer class="footer">

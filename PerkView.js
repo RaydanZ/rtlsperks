@@ -1,6 +1,5 @@
 const images = [
-   
-   
+    
     { src: 'Perks/REINCARNATION.jpg', title: 'REINCARNATION', tier: 3, classes: ['ATK'] },
     { src: 'Perks/INSPIRED.jpg', title: 'INSPIRED', tier: 2, classes: ['ATK', 'ATK_SPEED'] },
     { src: 'Perks/INDOMITABLE_WILL.jpg', title: 'INDOMITABLE WILL', tier: 2, classes: ['ATK'] },
@@ -109,38 +108,45 @@ const images = [
     { src: 'Perks/KI_ENERGY_ACQUISITION.jpg', title: 'KI ENERGY ACQUISITION', tier: 2, classes: ['HP', 'LIONHEART'] },
     { src: 'Perks/UNLEASHED_POTENTIAL.jpg', title: 'UNLEASHED POTENTIAL', tier: 2, classes: ['LEVEL'] },
     { src: 'Perks/CHALLENGER.jpg', title: 'CHALLENGER', tier: 3, classes: ['LIONHEART'] },
-    { src: 'Perks/SCROLL_OF_RESURRECTION.jpg', title: 'SCROLL OF RESURRECTION', tier: 2, classes: ['SURVIVE'] },
-    
-   
-    // Add more images as needed
+    { src: 'Perks/SCROLL_OF_RESURRECTION.jpg', title: 'SCROLL OF RESURRECTION', tier: 2, classes: ['SURVIVE'] }
 ];
 
 function displayImages(imagesToDisplay) {
     const grid = document.getElementById('imageGrid');
-    grid.innerHTML = ''; // Clear existing images
-    // Sort the images by title in alphabetical order
+    grid.innerHTML = ''; // Clear previous images
+
+    // Sort images alphabetically before displaying
     imagesToDisplay.sort((a, b) => a.title.localeCompare(b.title));
+
     imagesToDisplay.forEach(image => {
         const imgElement = document.createElement('img');
         imgElement.src = image.src;
         imgElement.alt = image.title;
         imgElement.title = image.title;
         grid.appendChild(imgElement);
-
     });
+}
 
+function matchesClassFilter(imageClasses, selectedClasses, strictFilter) {
+    if (selectedClasses.length === 0) return true; // No classes selected → show all images
+
+    return strictFilter
+        ? selectedClasses.every(cls => imageClasses.includes(cls)) // AND Gate (matches all selected classes)
+        : selectedClasses.some(cls => imageClasses.includes(cls)); // OR Gate (matches at least one selected class)
 }
 
 function filterImages() {
     const searchValue = document.getElementById('searchBar').value.toLowerCase();
     const selectedTier = document.getElementById('tierSelect').value;
-    const checkboxes = document.querySelectorAll('.filters input[type="checkbox"]');
-    const selectedClasses = Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
+    const selectedClasses = Array.from(document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked'))
+                                .map(checkbox => checkbox.value); // Only selecting class checkboxes
+    const strictFilter = document.getElementById('strictFilter').checked;
 
     const filteredImages = images.filter(image => {
         const matchesSearch = image.title.toLowerCase().includes(searchValue);
         const matchesTier = selectedTier === "" || image.tier.toString() === selectedTier;
-        const matchesClass = selectedClasses.length === 0 || selectedClasses.some(cls => image.classes.includes(cls));
+        const matchesClass = matchesClassFilter(image.classes, selectedClasses, strictFilter);
+
         return matchesSearch && matchesTier && matchesClass;
     });
 

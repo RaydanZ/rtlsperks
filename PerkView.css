@@ -107,9 +107,17 @@ select:hover {
 
 .footer a {
     color: #DAB060;
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 .footer a:hover {
     color: #ff7e5f;
+}
+
+.checkbox-group label {
+    margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
 }
