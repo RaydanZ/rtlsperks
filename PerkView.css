@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to right, #1e2b18, #4b5320, #bfae48); /* Bamboo Forest Gradient */
+    background: linear-gradient(to right, #000000, #464330);
 }
 
 .container {
