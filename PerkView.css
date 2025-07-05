@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to right, #000000, #DAB060);
+    background: linear-gradient(to right, #000000, #464330);
 }
 
 .container {
@@ -15,6 +15,8 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 h1 {
@@ -50,7 +52,6 @@ select:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px #00000080;
     color: #fff;
-
 }
 
 .filters > div {
@@ -102,7 +103,7 @@ select:hover {
     background-color: #000000cc;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 -2px 5px #00000080;/
+    box-shadow: 0 -2px 5px #00000080;
 }
 
 .footer a {
@@ -120,4 +121,54 @@ select:hover {
 
 .checkbox-group input[type="checkbox"] {
     margin-right: 5px;
+}
+
+/* 🆕 Perk Image Card with Title */
+.image-card {
+    text-align: center;
+    color: #fff;
+}
+
+.perk-title {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #dab060;
+}
+
+/* 🆕 Result Count Styling */
+#resultCount {
+    color: #dab060;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+/* ✅ Mobile Portrait Optimization */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .filters label {
+        font-size: 14px;
+    }
+
+    input[type="text"], select {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .perk-title {
+        font-size: 13px;
+    }
 }
