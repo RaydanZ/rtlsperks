@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to right, #000000, #464330);
+    background: linear-gradient(to right, #1e2b18, #4b5320, #bfae48); /* Bamboo Forest Gradient */
 }
 
 .container {
@@ -24,8 +24,11 @@ h1 {
     color: #DAB060;
 }
 
-input[type="text"], select {
-    width: auto;
+input[type="text"],
+select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #DAB060;
@@ -37,11 +40,11 @@ input[type="text"], select {
 }
 
 select {
-    width: 200px;
     cursor: pointer;
 }
 
-select:hover {
+select:hover,
+input[type="text"]:hover {
     border-color: #DAB060;
 }
 
@@ -158,7 +161,8 @@ select:hover {
         font-size: 14px;
     }
 
-    input[type="text"], select {
+    input[type="text"],
+    select {
         font-size: 14px;
         width: 100%;
     }
@@ -170,5 +174,9 @@ select:hover {
 
     .perk-title {
         font-size: 13px;
+    }
+
+    body {
+        background-attachment: scroll; /* Better mobile performance */
     }
 }
