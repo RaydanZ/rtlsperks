@@ -148,22 +148,21 @@ input[type="text"]:hover {
 
 /* ✅ Mobile Portrait Optimization */
 @media (max-width: 600px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .filters {
-        font-size: 14px;
         padding: 10px;
-    }
-
-    .filters label {
-        font-size: 14px;
     }
 
     input[type="text"],
     select {
-        font-size: 14px;
         width: 100%;
     }
 
@@ -172,11 +171,7 @@ input[type="text"]:hover {
         gap: 10px;
     }
 
-    .perk-title {
-        font-size: 13px;
-    }
-
     body {
-        background-attachment: scroll; /* Better mobile performance */
+        background-attachment: scroll;
     }
 }
