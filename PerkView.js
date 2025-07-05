@@ -108,7 +108,16 @@ const images = [
     { src: 'Perks/KI_ENERGY_ACQUISITION.jpg', title: 'KI ENERGY ACQUISITION', tier: 2, classes: ['HP', 'LIONHEART'] },
     { src: 'Perks/UNLEASHED_POTENTIAL.jpg', title: 'UNLEASHED POTENTIAL', tier: 2, classes: ['LEVEL'] },
     { src: 'Perks/CHALLENGER.jpg', title: 'CHALLENGER', tier: 3, classes: ['LIONHEART'] },
-    { src: 'Perks/SCROLL_OF_RESURRECTION.jpg', title: 'SCROLL OF RESURRECTION', tier: 2, classes: ['SURVIVE'] }
+    { src: 'Perks/SCROLL_OF_RESURRECTION.jpg', title: 'SCROLL OF RESURRECTION', tier: 2, classes: ['SURVIVE'] },
+    { src: 'Perks/WHITE_TIGERS_BLESSING.jpg', title: 'WHITE TIGERS BLESSING', tier: 2, classes: ['ATK_SPEED'] },
+    { src: 'Perks/HURRICANE_TALISMAN.jpg', title: 'HURRICANE TALISMAN', tier: 2, classes: ['ATK_SPEED'] },
+    { src: 'Perks/RED_PHOENIXS_BLESSING.jpg', title: 'RED PHOENIXS BLESSING', tier: 2, classes: ['ATK'] },
+    { src: 'Perks/BLAZING_TALISMAN.jpg', title: 'BLAZING TALISMAN', tier: 2, classes: ['ATK'] },
+    { src: 'Perks/BLACK_TORTOISES_BLESSING.jpg', title: 'BLACK TORTOISES BLESSING', tier: 2, classes: ['DODGE'] },
+    { src: 'Perks/FOG_TALISMAN.jpg', title: 'FOG TALISMAN', tier: 2, classes: ['DODGE'] },
+    { src: 'Perks/BLUE_DRAGONS_BLESSING.jpg', title: 'BLUE DRAGONS BLESSING', tier: 2, classes: ['HP'] },
+    { src: 'Perks/RAINDROP_TALISMAN.jpg', title: 'RAINDROP_TALISMAN', tier: 2, classes: ['HP'] },       
+    { src: 'Perks/INSPIRED.jpg', title: 'INSPIRED', tier: 2, classes: ['ATK', 'ATK_SPEED'] }
 ];
 
 function displayImages(imagesToDisplay) {
